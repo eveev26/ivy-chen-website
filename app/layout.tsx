@@ -1,8 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Oswald } from 'next/font/google'
+import { PT_Sans } from 'next/font/google'
 
-const inter = Oswald({ subsets: ['latin'] })
+const inter = PT_Sans({ subsets: ['latin'], weight: ['400'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
