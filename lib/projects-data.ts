@@ -7,6 +7,7 @@ export interface Project {
   alt: string;
   type: 'web' | 'mobile';
   backgroundColor: string;
+  link: string;
 }
 
 export const projectsData: Project[] = [
@@ -18,7 +19,8 @@ export const projectsData: Project[] = [
     image: '/images/plate-it-forward.png',
     alt: 'plate-it-forward',
     type: 'web',
-    backgroundColor: 'bg-light-blue'
+    backgroundColor: 'bg-light-blue',
+    link: 'https://devpost.com/software/plate-it-forward?_gl=1*7q8vi3*_gcl_au*MTUyMTQ0NTYyOS4xNzUxMzE4NzQ1*_ga*ODU2NzM1Njc5LjE3NTEzMTg3NDU.*_ga_0YHJK3Y10M*czE3NTI3MjgwOTkkbzMkZzEkdDE3NTI3MjgxMzIkajI3JGwwJGgw'
   },
   {
     id: 'scarpool',
@@ -28,7 +30,8 @@ export const projectsData: Project[] = [
     image: '/images/scarpool.png',
     alt: 'scarpool',
     type: 'mobile',
-    backgroundColor: 'bg-pink'
+    backgroundColor: 'bg-pink',
+    link: 'https://devpost.com/software/scarpool?_gl=1*ri1fyx*_gcl_au*MTUyMTQ0NTYyOS4xNzUxMzE4NzQ1*_ga*ODU2NzM1Njc5LjE3NTEzMTg3NDU.*_ga_0YHJK3Y10M*czE3NTI3MjgwOTkkbzMkZzEkdDE3NTI3MjgxNjckajU0JGwwJGgw'
   },
   {
     id: 'speech-summarizer',
@@ -38,6 +41,7 @@ export const projectsData: Project[] = [
     image: '/images/speech-summarizer.png',
     alt: 'speech-summarizer',
     type: 'mobile',
-    backgroundColor: 'bg-green'
+    backgroundColor: 'bg-green',
+    link: 'https://devpost.com/software/speechsummarizer?_gl=1*ml1ypa*_gcl_au*MTUyMTQ0NTYyOS4xNzUxMzE4NzQ1*_ga*ODU2NzM1Njc5LjE3NTEzMTg3NDU.*_ga_0YHJK3Y10M*czE3NTI3MjgwOTkkbzMkZzEkdDE3NTI3MjgyMDQkajQwJGwwJGgw'
   }
 ]; 

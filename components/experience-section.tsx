@@ -1,12 +1,13 @@
 'use client'
 
-import React, { useState } from 'react';
 import Image from 'next/image';
+import React, { useState } from 'react';
+
 import { experiencesData } from '../lib/experience-data';
 
 const tabColors = ['bg-light-blue', 'bg-pink', 'bg-green'];
 
-export default function ExperienceSection() {
+export function ExperienceSection() {
   const [activeTab, setActiveTab] = useState(experiencesData[0].id);
 
   const activeExperience = experiencesData.find(exp => exp.id === activeTab) || experiencesData[0];
@@ -14,7 +15,7 @@ export default function ExperienceSection() {
   const activeTabColor = tabColors[activeTabIndex] || tabColors[0];
 
   return (
-    <div className='flex flex-row w-screen m-12 pl-48 pr-48 place-items-center' style={{margin: '0 auto', maxWidth: '2000px'}}>
+    <div className='flex flex-row w-screen m-12 pl-48 pr-48 place-items-center container'>
       <div className='flex flex-col w-full mt-12 gap-2 rounded-2xl'>
         {/* Tab Navigation */}
         <div className='flex flex-row gap-2 -mb-2 relative z-10'>

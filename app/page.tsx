@@ -1,31 +1,36 @@
 'use client'
 
-import Image from 'next/image'
-import './/page.css';
-import Navbar from "../components/navbar";
-import ExperienceSection from "../components/experience-section";
-import React, { useState } from 'react';
-import Landing from '../components/landing';
-import Heading from '../components/heading';
-import ProjectsSection from '../components/projects-section';
-import AboutMeSection from '../components/about-me-section';
+import React from 'react';
+
+import { AboutMeSection } from '../components/about-me-section';
+import { ExperienceSection } from "../components/experience-section";
+import { Heading } from '../components/heading';
+import { Landing } from '../components/landing';
+import { Navbar } from "../components/navbar";
+import { ProjectsSection } from '../components/projects-section';
 
 export default function Home() {
   return (
     <main className='flex min-w-screen min-h-screen flex-col place-items-center bg-white' >
       <Navbar />
-      <Landing />
 
-      <Heading title="Projects" />
+      <section id="home">
+        <Landing />
+      </section>
 
-      <ProjectsSection />
+      <section>
+        <Heading title="Projects" id="projects" />
+        <ProjectsSection />
+      </section>
 
-      <Heading title="Experience" />
+      <section>
+        <Heading title="Experience" id="experience" />
+        <ExperienceSection />
+      </section>
 
-      <ExperienceSection />
-
-      <AboutMeSection />
-
+      <section id="about-me">
+        <AboutMeSection />
+      </section>
 
     </main>
   )

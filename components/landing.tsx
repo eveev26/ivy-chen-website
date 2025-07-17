@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-export default function Landing() {
+export function Landing() {
   return (
-    <div className='flex flex-row w-screen pl-48 pr-48 pt-44 pb-64 place-items-center justify-between' style={{margin: '0 auto', maxWidth: '2000px'}}>
+    <div className='flex flex-row w-screen pl-48 pr-48 pt-44 pb-64 place-items-center justify-between container'>
     <Image src='/images/profile-1.svg' alt="about" width={600} height={600}></Image>
     <div className='flex flex-col gap-20'>
       <p className='flex text-3xl text-justify text-dark-brown'>

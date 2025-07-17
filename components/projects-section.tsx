@@ -1,5 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+
 import { Project, projectsData } from '../lib/projects-data';
 
 interface ProjectsSectionProps {
@@ -15,12 +17,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, imagePosition }) => 
   const imageSize = project.type === 'web' ? { width: 600, height: 600 } : { width: 200, height: 200 };
   
   const imageElement = (
-    <Image 
-      src={project.image} 
-      alt={project.alt} 
-      width={imageSize.width} 
-      height={imageSize.height}
-    />
+    <Link href={project.link} target="_blank" rel="noopener noreferrer" className="project-image-link">
+      <Image 
+        src={project.image} 
+        alt={project.alt} 
+        width={imageSize.width} 
+        height={imageSize.height}
+      />
+    </Link>
   );
 
   const contentElement = (
@@ -74,7 +78,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ filterType }) => {
     : projectsData;
 
   return (
-    <div className='flex flex-row w-screen pt-24 pl-48 pr-48 pb-24 place-items-center' style={{margin: '0 auto', maxWidth: '2000px'}}>
+    <div className='flex flex-row w-screen pt-24 pl-48 pr-48 pb-24 place-items-center container'>
       <div className='flex flex-col gap-24 w-full'>
         {filteredProjects.map((project, index) => {
           const imagePosition = index % 2 === 0 ? 'left' : 'right';
@@ -92,4 +96,4 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ filterType }) => {
   );
 };
 
-export default ProjectsSection; 
+export { ProjectsSection }; 
