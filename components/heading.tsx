@@ -1,11 +1,14 @@
-export function Heading({ title, id }: { title: string; id?: string }) {
+export const Heading = ({ title, id }: { title: string; id?: string }) => {
   return (
-    <div id={id} className='flex flex-row w-screen pl-48 pr-48 place-items-center justify-left container'>
-      <div className='flex flex-col gap-12'>
-        <p className='flex text-6xl text-justify text-dark-brown'>
+    <div
+      id={id}
+      className="flex flex-row w-screen pl-48 pr-48 place-items-center justify-left container"
+    >
+      <div className="flex flex-col gap-12">
+        <h2 className="flex text-4xl lg:text-6xl text-justify text-dark-brown">
           {title}
-        </p>
+        </h2>
       </div>
     </div>
-  )
-}
+  );
+};

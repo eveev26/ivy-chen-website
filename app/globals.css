@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Add scroll margin to sections to account for fixed navbar */
+section {
+  scroll-margin-top: 120px;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
