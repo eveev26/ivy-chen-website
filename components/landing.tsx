@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const Landing = () => {
   return (
     <section id="landing">
-      <div className="flex flex-col lg:flex-row w-screen pl-8 lg:pl-48 pr-8 lg:pr-48 pt-44 pb-64 place-items-center justify-between container gap-12 lg:gap-0">
+      <div className="flex flex-col lg:flex-row w-screen pl-8 lg:pl-48 pr-8 lg:pr-48 pt-44 lg:pb-64 pb-24 place-items-center justify-between container gap-12 lg:gap-0">
         <Image
           src="/images/profile-1.svg"
           alt="Image of Ivy Chen"

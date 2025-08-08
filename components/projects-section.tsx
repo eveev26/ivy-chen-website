@@ -37,7 +37,7 @@ const ProjectCard = ({
 
   const contentElement = (
     <div
-      className={`flex flex-col justify-between p-8 lg:p-12 ${backgroundColor} rounded-2xl flex-1`}
+      className={`flex flex-col justify-between gap-8 md:gap-12 lg:gap-0 p-8 lg:p-12 ${backgroundColor} rounded-2xl flex-1`}
     >
       <div className="flex flex-col gap-4">
         <h3 className="flex text-2xl lg:text-4xl font-bold text-justify text-dark-brown">
